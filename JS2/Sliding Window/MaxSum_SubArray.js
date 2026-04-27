@@ -1,4 +1,4 @@
-let arr = [1, 2, 3, 4, 5]
+let arr = [2, 1, 5, 1, 3, 2]
 let k = 3
 
 function maxSum(arr, k){
@@ -11,9 +11,9 @@ function maxSum(arr, k){
 
     maxSum = windowSum;
     // Step - 2 Sliding Window Start
-
     for(let i = k; i < arr.length; i++){
-        windowSum = windowSum + arr[i] - arr[i - k];
+        windowSum += arr[i] // new elemet add kro
+        windowSum -=  arr[i - k]; // old element remove kro 
 
         maxSum = Math.max(maxSum, windowSum);
     }
