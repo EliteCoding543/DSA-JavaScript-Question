@@ -2,7 +2,7 @@ function isPalindrome(arr, n) {
   let res = isPalindromic(arr, 0, n - 1);
   if (res === 1)
     return true;
-  return false;
+    return false;
 }
 
 function isPalindromic(arr, s, e){

@@ -1,0 +1,17 @@
+/* ............ Specificity in CSS Power Inline >>> Internal/external >> id > class > tagName */
+div{
+    background-color: yellow;
+    color: black;
+    padding: 20px 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 45px;
+    max-width: 520px;
+}
+
+p{
+    background-color: rgb(7, 7, 85);
+    box-shadow: 4px, 8px, 12px, rgba(60, 60, 60, 0.823);
+    color: rgb(250, 248, 248);
+    font-size: 38px;
+    font-weight: 700;
+}
