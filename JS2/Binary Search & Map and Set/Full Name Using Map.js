@@ -4,7 +4,7 @@ const rawUsers = [
 ];
 
 let result = rawUsers.map(item => ({
-    id : item.id,
-    FullName : `${item.firstName}, ${item.lastName}`
+    // id : item.id,
+    FullName :`${item.firstName}, ${item.lastName}`
 }))
 console.log(result)
