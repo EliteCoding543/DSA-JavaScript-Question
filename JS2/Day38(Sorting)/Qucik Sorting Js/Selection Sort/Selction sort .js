@@ -24,4 +24,4 @@ function selectionSort(arr) {
 }
 
 let arr = [29, 10, 14, 37, 13];
-console.log("Sorted:", selectionSort(arr));
+console.log("Final Sorted:", selectionSort(arr));

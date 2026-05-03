@@ -1,5 +1,4 @@
 function QucikSort(arr){
-    
      if(arr.length == 0 || arr.length == 1){
         return arr
      }
