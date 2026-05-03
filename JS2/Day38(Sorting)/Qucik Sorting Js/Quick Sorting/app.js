@@ -2,7 +2,7 @@ function QucikSort(arr){
      if(arr.length == 0 || arr.length == 1){
         return arr
      }
-
+     
      let pivotIndx = arr[arr.length - 1];
      let left = []
      let right = []
