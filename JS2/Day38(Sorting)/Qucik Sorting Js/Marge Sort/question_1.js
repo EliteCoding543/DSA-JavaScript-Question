@@ -36,3 +36,6 @@ function mergeSort(arr){
 // Example usage:
 const unsortedArray = [5, 3, 8, 4, 2, 7, 1, 6];
 console.log(mergeSort(unsortedArray));  // Output: [1, 2, 3, 4, 5, 6, 7, 8]
+
+
+
