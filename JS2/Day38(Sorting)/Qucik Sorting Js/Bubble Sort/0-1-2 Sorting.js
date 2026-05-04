@@ -1,30 +1,22 @@
-function zero_one_two_sorting(arr) {
-  let low = 0;
-  let mid = 0;
-  let high = arr.length - 1;
-
-  while (mid <= high) {
-    if (arr[mid] === 0) {
-      // Agar 0 mile, toh use low wale pointer se swap karo
-      [arr[low], arr[mid]] = [arr[mid], arr[low]];
-      low++;
-      mid++;
-    } 
-    else if (arr[mid] === 1) {
-      // Agar 1 mile, toh wo apni sahi jagah (beech mein) hi hai
-      mid++;
-    } 
-    else {
-      // Agar 2 mile, toh use high wale pointer se swap karo
-      [arr[high], arr[mid]] = [arr[mid], arr[high]];
-      high--;
-      // Yahan mid++ nahi karte kyunki swap ke baad high se jo 
-      // element aaya hai use abhi check karna baki hai
-    }
+function sortZeroTwoOne(arr) {
+  let count0 = 0, count1 = 0, count2 = 0;
+  
+  // Count 0s, 1s, and 2s
+  for (let num of arr) {
+    if (num === 0) count0++;
+    else if (num === 1) count1++;
+    else count2++;
   }
+  
+  let idx = 0;
+  // Place all 0s
+  for (let i = 0; i < count0; i++) arr[idx++] = 0;
+  // Place all 2s
+  for (let i = 0; i < count2; i++) arr[idx++] = 2;
+  // Place all 1s
+  for (let i = 0; i < count1; i++) arr[idx++] = 1;
+  
   return arr;
 }
-
-// Check karte hain
-console.log(zero_one_two_sorting([2, 0, 1, 2, 0, 1, 0])); 
-// Output: [0, 0, 0, 1, 1, 2, 2]
+let arr = [1, 2, 0, 2, 0, 1, 0, 1, 0, 2, 1, 0];
+console.log(sortZeroTwoOne(arr))
