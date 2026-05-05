@@ -13,5 +13,5 @@ function generateSubsequence(input, output)
     generateSubsequence(
         input.substring(1), output);
 }
-const inputString = 'abc';
+const inputString = 'abcd';
 generateSubsequence(inputString,"");
