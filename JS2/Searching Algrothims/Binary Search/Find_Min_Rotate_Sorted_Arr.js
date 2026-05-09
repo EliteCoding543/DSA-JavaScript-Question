@@ -1,24 +1,22 @@
-let arr = [3,4,5,1,2];
+let arr = [3, 4, 5, 6, 1, 2];
 
-function findMinRotated(arr){
+function findMaxElements(arr){
     let start = 0;
     let end = arr.length - 1;
 
     while(start < end){
-        let mid = Math.floor((start + end) / 2);
+        mid = Math.floor((start + end)/ 2);
 
-        // minimum right side me hai
         if(arr[mid] > arr[end]){
-            start = mid + 1;
+            start = mid + 1
         }
 
-        // minimum left side me hai (including mid)
-        else{
+        else {
             end = mid;
         }
     }
 
-    return arr[start];
+    return arr[start]
 }
 
-console.log(findMinRotated(arr));
+console.log(findMaxElements(arr));
