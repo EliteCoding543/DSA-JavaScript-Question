@@ -22,3 +22,4 @@ function CountingSortArr(arr){
 }
 
 console.log(CountingSortArr([8, 9, 10, 12, 8, 9, 11, 15]));
+console.log(CountingSortArr([4, 2, 2, 8, 3, 3, 1]));
