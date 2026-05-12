@@ -4,27 +4,20 @@ function oddEvenSort(arr){
     let sorted = false;
 
     while(!sorted){
-
         sorted = true;
 
         // EVEN PHASE
         for(let i = 0; i <= arr.length - 2; i += 2){
-
             if(arr[i] > arr[i + 1]){
-
                 [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];
-
                 sorted = false;
             }
         }
 
         // ODD PHASE
         for(let i = 1; i <= arr.length - 2; i += 2){
-
             if(arr[i] > arr[i + 1]){
-
                 [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];
-
                 sorted = false;
             }
         }
