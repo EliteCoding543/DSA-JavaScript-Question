@@ -1,4 +1,4 @@
-let arr = [1, 2, 0, 5, 0, 7, 0]
+let arr = [1,3,0,0,12]
 
 let startIndex = 0
 
