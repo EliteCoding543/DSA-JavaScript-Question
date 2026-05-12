@@ -1,0 +1,208 @@
+/* =============================== */
+/* ✅ LARGE LAPTOP */
+/* =============================== */
+
+@media (max-width: 1200px){
+
+    nav{
+        gap: 20px;
+    }
+
+    .location{
+        min-width: 180px;
+    }
+
+    .location h6{
+        font-size: 16px;
+    }
+
+    .search-bar{
+        height: 42px;
+    }
+
+    .card{
+        width: 120px;
+    }
+}
+
+/* =============================== */
+/* ✅ TABLET */
+/* =============================== */
+
+@media (max-width: 992px){
+
+    header{
+        padding: 0 20px;
+    }
+
+    nav{
+        gap: 15px;
+        padding-left: 20px;
+    }
+
+    .logo-img{
+        width: 100px;
+    }
+
+    .location{
+        min-width: 150px;
+    }
+
+    .location h6{
+        font-size: 15px;
+    }
+
+    .location p{
+        font-size: 12px;
+    }
+
+    .btn-login{
+        font-size: 16px;
+    }
+
+    .cart{
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+
+    .home-banner-2{
+        width: 90%;
+        margin: auto;
+        gap: 10px;
+    }
+
+    .item-card,
+    .item-card-2{
+        overflow-x: auto;
+    }
+
+    .card{
+        min-width: 120px;
+    }
+}
+
+/* =============================== */
+/* ✅ MOBILE */
+/* =============================== */
+
+@media (max-width: 768px){
+
+    header{
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .logo{
+        border-right: none;
+        padding-right: 0;
+        margin-bottom: 15px;
+    }
+
+    nav{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: stretch;
+        padding-left: 0;
+        gap: 15px;
+    }
+
+    .location{
+        min-width: 100%;
+    }
+
+    .search-bar{
+        width: 100%;
+    }
+
+    .nav-btns{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .btn-login,
+    .cart{
+        width: 48%;
+        justify-content: center;
+    }
+
+    .home-banner{
+        width: 95%;
+    }
+
+    .banner-content img{
+        border-radius: 14px;
+    }
+
+    .home-banner-2{
+        width: 95%;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .banner-2{
+        padding: 0;
+    }
+
+    .item-card,
+    .item-card-2{
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
+
+    .card{
+        min-width: 110px;
+        height: auto;
+    }
+
+    .card img{
+        height: auto;
+    }
+}
+
+/* =============================== */
+/* ✅ SMALL MOBILE */
+/* =============================== */
+
+@media (max-width: 480px){
+
+    section{
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .logo-img{
+        width: 90px;
+    }
+
+    .location h6{
+        font-size: 14px;
+    }
+
+    .location p{
+        font-size: 11px;
+    }
+
+    #input-bar{
+        font-size: 13px;
+    }
+
+    .btn-login{
+        font-size: 14px;
+    }
+
+    .cart{
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .card{
+        min-width: 95px;
+    }
+
+    .banner-2 img{
+        border-radius: 12px;
+    }
+}
