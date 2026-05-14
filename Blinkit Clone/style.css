@@ -163,6 +163,7 @@ nav:hover {
 
 .cart:hover{
     background-color: #076b19;
+    box-shadow: 0 5px 10px rgba(61, 139, 6, 0.843);
 }
 
 /* ================= HOME BANNER ================= */
