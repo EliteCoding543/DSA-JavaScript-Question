@@ -54,4 +54,4 @@ function countOccurrence(arr, target){
    return last - first + 1;
 }
 
-console.log(countOccurrence([1, 2, 2, 2, 2, 2, 3], 2));
+console.log(countOccurrence([1, 2, 2, 2, 2, 2, 3,], 2));
