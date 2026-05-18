@@ -243,6 +243,8 @@ section{
 }
 
 /* ===== IMAGE GRID ===== */
+/* ===== IMAGE / VIDEO GRID ===== */
+
 .container{
     position: relative;
     width: 100%;
@@ -255,76 +257,80 @@ section{
     height: 100%;
 }
 
+/* ===== COMMON BOX ===== */
+
 .grid-box{
     position: absolute;
-    border-radius: 25px;
     overflow: hidden;
-    background-size: cover;
-    background-position: center;
+    border-radius: 25px;
 }
 
-/* Left Small */
+/* ===== VIDEO ===== */
+
+.grid-box video{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+/* ===== BOX 1 ===== */
+
 .grid-box:nth-child(1){
     width: 180px;
     height: 260px;
+
     top: 20px;
     left: 2%;
-    background-image: url('Assest/1.jpg');
 }
 
-/* Left Large */
+/* ===== BOX 2 ===== */
+
 .grid-box:nth-child(2){
     width: 320px;
     height: 420px;
+
     top: 120px;
     left: 8%;
-    background-image: url("Assest/2.jpg");
 }
 
-/* Center */
+/* ===== BOX 3 ===== */
+
 .grid-box:nth-child(3){
     width: 560px;
     height: 420px;
+
     left: 50%;
     top: 280px;
+
     transform: translateX(-50%);
     z-index: 2;
-    background-image: url("Assest/3.jpg");
 }
 
-/* Right Large */
+/* ===== BOX 4 ===== */
+
 .grid-box:nth-child(4){
-   width: 320px;
+    width: 320px;
     height: 420px;
+
     top: 90px;
     right: 8%;
-    background-image: url("Assest/4.jpg");
 }
 
-/* Right Small */
+/* ===== BOX 5 ===== */
+
 .grid-box:nth-child(5){
     width: 180px;
     height: 220px;
+
     top: 40px;
     right: 0;
-    background-image: url("Assest/girl.jpg");
 }
 
 /* ===== RESPONSIVE ===== */
+
 @media (max-width: 991px){
-
-    .navbar,
-    .header-btns{
-        display: none;
-    }
-
-    .menu-icon{
-        display: block;
-    }
-
-    .home-content h1{
-        font-size: 3rem;
-    }
 
     .container{
         height: auto;
@@ -352,18 +358,6 @@ section{
 }
 
 @media (max-width: 600px){
-
-    section{
-        padding: 7rem 1rem 2rem;
-    }
-
-    .home-content h1{
-        font-size: 2.2rem;
-    }
-
-    .rating-box{
-        flex-direction: column;
-    }
 
     .grid{
         grid-template-columns: 1fr;
