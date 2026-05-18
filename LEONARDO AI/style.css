@@ -22,6 +22,8 @@
     --border: rgba(255,255,255,0.12);
 }
 
+
+
 /* ===== GLOBAL ===== */
 body{
     background: var(--black);
@@ -35,7 +37,8 @@ img{
 }
 
 section{
-    padding: 7rem 5% 2rem;
+    padding: 7rem 3.5rem;
+    width: 100%;
 }
 
 /* ===== HEADER ===== */
