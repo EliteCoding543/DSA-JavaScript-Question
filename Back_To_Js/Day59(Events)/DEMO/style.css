@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+#text{
+    width: 30%;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#heading {
+    width: 60%;
+    height: 40vh;
+    font-size: 19px;
+    border: 2px solid rgb(44, 44, 44);
+    margin: 10px 30px;
+}
+
+
+
+#navBar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(99, 99, 238);
+    color: white;
+    padding: 10px 50px;
+    font-size: 35px;
+}
+
+#btns{
+    display: flex;
+    gap: 20px;
+}
+
+#box {
+    font-size: 28px;
+    padding: 20px 30px;
+}
