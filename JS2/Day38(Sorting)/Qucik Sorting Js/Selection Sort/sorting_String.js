@@ -16,4 +16,4 @@ function sortingString(str){
     return arr.join("")
 }
 
-console.log(sortingString("FEDCBA"));
+console.log(sortingString("fedcba"));
