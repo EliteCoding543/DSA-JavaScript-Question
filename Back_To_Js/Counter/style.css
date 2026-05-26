@@ -31,18 +31,13 @@ body{
 .counter-card{
     width: 100%;
     max-width: 380px;
-
     margin: auto;
     padding: 40px 30px;
-
     background: rgba(255,255,255,0.08);
     backdrop-filter: blur(10px);
-
     border: 1px solid rgba(255,255,255,0.1);
     border-radius: 20px;
-
     text-align: center;
-
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 

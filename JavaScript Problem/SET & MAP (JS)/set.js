@@ -4,3 +4,5 @@ fruits.add("Chips");
 console.log(fruits);
 console.log(fruits.has("banana"));  // True Exixts Value
 console.log(fruits.has("Graps"));   // False Not Exixts Value;
+
+console.log(new Set([1,1,1]).size === 1) 

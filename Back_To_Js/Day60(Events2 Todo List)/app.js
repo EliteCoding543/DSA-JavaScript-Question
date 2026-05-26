@@ -15,17 +15,21 @@ form.addEventListener("submit", function(e){
     }
 
     let div = document.createElement("div");
-    
-    div.addEventListener("click", () => {
-        div.remove();
-    })
 
     div.classList.add("card");
 
     div.innerHTML = `
         <h3>${title.value}</h3>
         <p>${textBar.value}</p>
+        <i class="fas fa-times close-btn"></i>
     `;
+
+    // innerHTML ke baad select karo
+    let closeBtn = div.querySelector(".close-btn");
+
+    closeBtn.addEventListener("click", () => {
+        div.remove();
+    });
 
     right.appendChild(div);
 
