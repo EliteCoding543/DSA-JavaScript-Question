@@ -46,6 +46,28 @@ input{
 
 .right{
     width: 40vw;
-    height: 40vh;
-    background-color: rgb(166, 174, 174);
+    height: 60px;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(109, 109, 244);
+    padding: 10px;
+}
+
+.list{
+    color: rgb(0, 0, 0);
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+li{
+    list-style: none;
+}
+.list a{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 20px;
 }

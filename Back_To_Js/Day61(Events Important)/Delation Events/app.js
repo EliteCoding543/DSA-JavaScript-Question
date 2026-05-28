@@ -1,13 +1,17 @@
-const box = document.getElementById("box")
-const cart = document.getElementById("cart")
-
+const box = document.getElementById("box");
+const cart = document.getElementById("cart");
 
 
 box.addEventListener("click", (e) => {
-    if(e.target.tagName === "MAIN"){
-        return 
+
+    if(!e.target.classList.contains("card")){
+        return;
     }
 
-    let curr = e.target.innerText
-    cart.innerText = curr + " " + cart.innerText
-})
+    let item = document.createElement("p");
+
+    item.innerText = e.target.innerText;
+
+    cart.append(item);
+});
+
