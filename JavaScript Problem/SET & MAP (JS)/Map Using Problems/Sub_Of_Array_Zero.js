@@ -23,3 +23,4 @@ function findSubArray(arr){
 }
 
 console.log(findSubArray([6, -1, -3, 4, -2, 2, 4, 6, -12, 7]));
+console.log(findSubArray([6, -1, -3, 4, -2, 2, 4, 6, -12, -2]));
