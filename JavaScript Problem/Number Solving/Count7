@@ -1,0 +1,13 @@
+let num = 277172;
+let count = 0;
+
+while(num > 0){
+    let lastDigit = num % 10;
+     if(lastDigit === 7){
+        count++
+     }
+
+     num = Math.floor(num / 10)
+}
+
+console.log(count)
