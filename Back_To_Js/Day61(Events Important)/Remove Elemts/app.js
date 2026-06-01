@@ -1,6 +1,7 @@
 const btn = document.getElementById("btn");
 const inputText = document.getElementById("input-text");
 const right = document.getElementById("right");
+const lists = document.getElementById("lists");
 
 
 // Add Task
@@ -18,13 +19,15 @@ btn.addEventListener("click", () => {
         ${value}
     `;
 
-    right.append(li);
+    lists.append(li);
 
     inputText.value = "";
 });
 
 
 // Event Delegation for Delete
-right.addEventListener("click", (e) => {
-         li.innerHTML =  ""
+lists.addEventListener("click", (e) => {
+        if(e.target.tagName == "LI"){
+            e.target.remove()
+        }
 });
