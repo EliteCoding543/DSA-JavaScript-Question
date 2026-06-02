@@ -3,17 +3,20 @@ const columns = document.querySelectorAll(".task-list");
 function addTask() {
   const input = document.getElementById("taskInput");
 
-  if (input.value === "") return;
+      if (input.value === ""){
+        alert("Please Enter Some Value?");
+        return;
+      } 
 
-  const task = document.createElement("div");
+      const task = document.createElement("div");
 
-  task.classList.add("task");
-  task.innerText = input.value;
+      task.classList.add("task");
+      task.innerText = input.value;
 
-  task.draggable = true;
+      task.draggable = true;
 
-  task.addEventListener("dragstart", () => {
-    task.classList.add("dragging");
+      task.addEventListener("dragstart", () => {
+        task.classList.add("dragging");
   });
 
   task.addEventListener("dragend", () => {
@@ -36,3 +39,9 @@ columns.forEach(column => {
     }
   });
 });
+
+window.addEventListener("keydown", (e) => {
+  if(e.key === "Enter"){
+    addTask()
+  }
+})
