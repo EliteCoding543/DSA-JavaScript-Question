@@ -25,7 +25,31 @@ submitBtn.addEventListener("click", () => {
      ageMsg.style.display = "block"
    }
 
+   if(!userEmailValue.endsWith("@gmail.com")){
+   }
 
+   let isUc = false;
+   let isLc = false;
+   let isHasSc = false;
+   let allowedChar = ["!", "@", "#", "$", "%", "&", "*", "_"];
+
+   for(let item of passwordValue){
+      if(item.toUpperCase() === item){
+         isUc = true;
+      }
+
+      if(item.toLowerCase() === item){
+         isLc = true
+      }
+
+      if(allowedChar.includes(item)){
+         isHasSc = true
+      }
+   }
+
+   if(!isLc || !isUc || !isHasSc || !item.length < 8){
+       pwMsg.style.display = "block"
+   }
 })
 
 
