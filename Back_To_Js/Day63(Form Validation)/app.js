@@ -19,6 +19,7 @@ submitBtn.addEventListener("click", () => {
 
    if(userNameValue.length < 4 || userAgeValue.length > 8){
       nameMsg.style.display = "block"
+      userName.innerHTML = `${nameMsg}`
    }
 
    if(userAgeValue < 18){
