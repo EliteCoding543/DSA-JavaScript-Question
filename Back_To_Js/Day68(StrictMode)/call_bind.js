@@ -1,5 +1,5 @@
-function introduce(){
-    console.log(`Hello my name is ${this.name} and my age is ${this.age}`);
+function introduce(city){
+    console.log(`Hello my name is ${this.name} and my age is ${this.age} and i live in ${city}`);
 }
 
 let p1 = {
@@ -20,5 +20,9 @@ let p2 = {
 // p2.introduce.call(p2) -> 1
 
 
-introduce.call(p1);
-introduce.call(p2);
+introduce.call(p1, "Noida");
+introduce.call(p2, "Meerut");
+introduce.apply(p1, ["delhi"]);
+
+const myIntro = introduce.bind(p2, "Mumbai");
+myIntro()
