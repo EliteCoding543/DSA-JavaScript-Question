@@ -1,0 +1,11 @@
+#ac, #gs{
+    height: 20px;
+    width: 320px;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 500;
+    padding: 10px;
+}
+#ac{
+    margin-top: 20px;
+}
