@@ -27,3 +27,4 @@ function Count_Pairs(arr, target){
 }
 
 console.log(Count_Pairs([1, 2, 3, 4, 5 , 6], 7));
+console.log(Count_Pairs([10, 2, -2, -20, 10], -10));
