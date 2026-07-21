@@ -1,15 +1,15 @@
-const collection = document.getElementsByClassName("box")
-const list = document.querySelectorAll(".box")
-const ele = document.getElementById("title");
+// const collection = document.getElementsByClassName("box")
+// const list = document.querySelectorAll(".box")
+// const ele = document.getElementById("title");
 
-console.dir(ele);
+// console.dir(ele);
 
-document.body.innerHTML +=
+// document.body.innerHTML +=
 
-'<div class="box"></div>';
+// '<div class="box"></div>';
 
-console.log(collection.length)
-console.log(list.length)
+// console.log(collection.length)
+// console.log(list.length)
 
 
 // function abc(){
@@ -19,3 +19,13 @@ console.log(list.length)
 // }
 
 // console.log(abc());
+
+
+const textarea = document.getElementById("Text");
+console.log(textarea)
+const count = document.getElementById("count");
+
+textarea.addEventListener("input", () => {
+    if(count.length > 200) return
+    count.textContent  = textarea.value.length;
+});
