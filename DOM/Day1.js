@@ -10,3 +10,12 @@ document.body.innerHTML +=
 
 console.log(collection.length)
 console.log(list.length)
+
+
+// function abc(){
+//     return {
+//         b : 1
+//     }
+// }
+
+// console.log(abc());
